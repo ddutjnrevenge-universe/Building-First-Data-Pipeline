@@ -1,0 +1,96 @@
+[0m19:15:28.685416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024565DB1C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024565E3B010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024565E46190>]}
+
+
+============================== 19:15:28.691180 | 68b6eea1-cc3c-4b5f-962b-dba7adb8dbda ==============================
+[0m19:15:28.691180 [info ] [MainThread]: Running with dbt=1.7.7
+[0m19:15:28.692188 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\hanhn\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:15:28.693187 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/hanhn/.dbt')}
+[0m19:15:28.694186 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m19:16:06.582490 [debug] [MainThread]: Starter project path: C:\Users\hanhn\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m19:16:06.669276 [info ] [MainThread]: 
+Your new dbt project "medallion_dbt_spark" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:16:06.672283 [info ] [MainThread]: Setting up your profile.
+[0m19:20:04.755607 [info ] [MainThread]: Profile medallion_dbt_spark written to C:\Users\hanhn\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:20:04.759019 [debug] [MainThread]: Command `dbt init` succeeded at 19:20:04.759019 after 276.09 seconds
+[0m19:20:04.760017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002456CC7CCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024565B68F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002456D0600D0>]}
+[0m19:20:04.760017 [debug] [MainThread]: Flushing usage events
+[0m19:20:24.688278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229157FF850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229151ACB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229151A5AD0>]}
+
+
+============================== 19:20:24.694802 | 68d24a97-b7de-4267-83cf-7cfcf9016fdc ==============================
+[0m19:20:24.694802 [info ] [MainThread]: Running with dbt=1.7.7
+[0m19:20:24.696802 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\hanhn\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:20:24.697850 [info ] [MainThread]: dbt version: 1.7.7
+[0m19:20:24.699118 [info ] [MainThread]: python version: 3.11.2
+[0m19:20:24.700131 [info ] [MainThread]: python path: C:\Users\hanhn\AppData\Local\Programs\Python\Python311\python.exe
+[0m19:20:24.701760 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m19:20:26.250198 [info ] [MainThread]: Using profiles dir at C:\Users\hanhn\.dbt
+[0m19:20:26.251714 [info ] [MainThread]: Using profiles.yml file at C:\Users\hanhn\.dbt\profiles.yml
+[0m19:20:26.251866 [info ] [MainThread]: Using dbt_project.yml file at D:\Data Engineering\Medallion-Spark-Azure-DBT\dbt_project.yml
+[0m19:20:26.253726 [info ] [MainThread]: adapter type: databricks
+[0m19:20:26.254270 [info ] [MainThread]: adapter version: 1.7.7
+[0m19:20:26.255278 [info ] [MainThread]: Configuration:
+[0m19:20:26.256114 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:20:26.257238 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:20:26.258242 [info ] [MainThread]: Required dependencies:
+[0m19:20:26.259323 [debug] [MainThread]: Executing "git --help"
+[0m19:20:26.588241 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:20:26.588241 [debug] [MainThread]: STDERR: "b''"
+[0m19:20:26.589233 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:20:26.589867 [info ] [MainThread]: Connection:
+[0m19:20:26.590879 [info ] [MainThread]:   host: https://adb-4151724469439226.6.azuredatabricks.net
+[0m19:20:26.592383 [info ] [MainThread]:   http_path: sql/protocolv1/o/4151724469439226/0213-101109-dhbx09c2
+[0m19:20:26.592383 [info ] [MainThread]:   catalog: hive_metastore
+[0m19:20:26.593645 [info ] [MainThread]:   schema: saleslt
+[0m19:20:26.594657 [info ] [MainThread]: Registered adapter: databricks=1.7.7
+[0m19:20:26.595656 [debug] [MainThread]: Databricks adapter: conn: 2375780940880: Creating DatabricksDBTConnection sess: None, name: debug, idle: 0s, acqrelcnt: 0, lang: None, thrd: (7976, 12760), cmpt: ``, lut: None
+[0m19:20:26.596656 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m19:20:26.596656 [debug] [MainThread]: Databricks adapter: Thread (7976, 12760) using default compute resource.
+[0m19:20:26.597658 [debug] [MainThread]: Databricks adapter: conn: 2375780940880: _acquire sess: None, name: debug, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (7976, 12760), cmpt: ``, lut: 1707826826.5976584
+[0m19:20:26.598659 [debug] [MainThread]: Databricks adapter: conn: 2375780940880: get_thread_connection: sess: None, name: debug, idle: 0.0s, acqrelcnt: 1, lang: None, thrd: (7976, 12760), cmpt: ``, lut: 1707826826.5976584
+[0m19:20:26.599154 [debug] [MainThread]: Databricks adapter: conn: 2375780940880: idle check connection: sess: None, name: debug, idle: 0.0010013580322265625s, acqrelcnt: 1, lang: None, thrd: (7976, 12760), cmpt: ``, lut: 1707826826.5976584
+[0m19:20:26.599730 [debug] [MainThread]: Using databricks connection "debug"
+[0m19:20:26.599730 [debug] [MainThread]: On debug: select 1 as id
+[0m19:20:26.599730 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:20:29.322986 [debug] [MainThread]: Databricks adapter: Error while running:
+select 1 as id
+[0m19:20:29.324036 [debug] [MainThread]: Databricks adapter: Database Error
+  HTTPSConnectionPool(host='https', port=None): Max retries exceeded with url: //adb-4151724469439226.6.azuredatabricks.net:443/sql/protocolv1/o/4151724469439226/0213-101109-dhbx09c2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000229279847D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+[0m19:20:29.324036 [debug] [MainThread]: Databricks adapter: conn: 2375780940880: _release sess: None, name: debug, idle: 0.0s, acqrelcnt: 0, lang: None, thrd: (7976, 12760), cmpt: ``, lut: 1707826829.3240364
+[0m19:20:29.325272 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:20:29.326275 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:20:29.327269 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Data Engineering\Medallion-Spark-Azure-DBT\dbt_project.yml> not found
+
+[0m19:20:29.328275 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  Database Error
+    HTTPSConnectionPool(host='https', port=None): Max retries exceeded with url: //adb-4151724469439226.6.azuredatabricks.net:443/sql/protocolv1/o/4151724469439226/0213-101109-dhbx09c2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000229279847D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:20:29.332786 [debug] [MainThread]: Command `dbt debug` failed at 19:20:29.331779 after 4.71 seconds
+[0m19:20:29.332786 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:20:29.333815 [debug] [MainThread]: On debug: No close available on handle
+[0m19:20:29.333815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022914B31090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022915829150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002290E42B0D0>]}
+[0m19:20:29.334794 [debug] [MainThread]: Flushing usage events

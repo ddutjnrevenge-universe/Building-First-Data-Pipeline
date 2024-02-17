@@ -1,0 +1,120 @@
+version: 2
+
+model:
+  - name: dim_sales
+    columns:
+    - name: product_sk
+      description: The surrogate key for the product dimension
+      tests:
+        - unique
+        - not_null
+    - name: name
+      description: The name of the product
+      tests:
+        - not_null
+    - name: standardcost
+      description: The standard cost of the product
+    - name: listprice
+      description: The list price of the product
+    - name: size 
+      description: The size of the product
+    - name: weight
+      description: The weight of the product
+    - name: productcategoryid
+      description: The product category id
+      tests:
+        - not_null
+    - name: productmodelid
+      description: The product model id
+      tests:
+        - not_null
+    - name: sellstartdate
+      description: The date the product was first available for sale
+      tests:
+        - not_null
+    - name: sellenddate
+      description: The date the product was last available for sale
+    - name: discontinueddate
+      description: The date the product was discontinued
+    - name: thumbnailphoto
+      description: The thumbnail photo of the product
+    - name: thumbnailphotofilename
+      description: The thumbnail photo file name of the product
+    - name: salesorderid
+      description: The sales order id
+      tests:
+        - unique
+        - not_null
+    - name: salesorderdetailid
+      description: The sales order detail id
+      tests:
+        - unique
+        - not_null
+    - name: orderqty
+      description: The order quantity
+    - name: productid
+      description: The product id
+      tests:
+        - not_null
+    - name: unitprice
+      description: The unit price
+    - name: unitpricediscount
+      description: The unit price discount
+    - name: linetotal
+      description: The line total
+    - name: salesorderid
+      description: The sales order id
+      tests:
+        - not_null
+    - name: revisionnumber
+      description: The revision number
+    - name: orderdate
+      description: The order date
+      tests:
+        - not_null
+    - name: duedate
+      description: The due date
+      tests:
+        - not_null
+    - name: shipdate
+      description: The ship date
+      tests:
+        - not_null
+    - name: status
+      description: The status
+    - name: onlineorderflag
+      description: The online order flag
+    - name: salesordernumber
+      description: The sales order number
+    - name: purchaseordernumber
+      description: The purchase order number
+    - name: accountnumber
+      description: The account number
+    - name: customerid
+      description: The customer id
+      tests:
+        - not_null
+    - name: billtoaddressid
+      description: The bill to address id
+      tests:
+        - not_null
+    - name: shiptoaddressid
+      description: The ship to address id
+      tests:
+        - not_null
+    - name: shipmethod
+      description: The ship method id
+      tests:
+        - not_null
+    - name: creditcardapprovalcode
+      description: The credit card approval code
+    - name: subtotal
+      description: The subtotal
+    - name: taxamt
+      description: The tax amount
+    - name: freight
+      description: The freight
+    - name: totaldue
+      description: The total due
+    - name: comment
+      description: The comment

@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+    - name: customer_sk
+      description: The surrogate key for the customer dimension
+      tests:
+        - unique
+        - not_null
+    - name: customerid
+      description: The natural key for the customer dimension
+      tests:
+        - not_null
+    - name: fullname
+      description: the customer name. adopted as customer_fullname when person name is not available
+    - name: AddressID
+      tests: 
+        - not_null
+    - name: AddressType
+    - name: AddressLine1
+    - name: City
+    - name: StateProvince
+    - name: CountryRegion
+    - name: PostalCode
